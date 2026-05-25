@@ -1,0 +1,79 @@
+name: Update airspace data
+
+on:
+  schedule:
+    # FAA NASR cycles every 28 days. Run at 10:00 UTC on each cycle date
+    # (data goes live at 00:01 Eastern = ~04:01 UTC; 10:00 UTC gives margin).
+    # Cycle dates for 2026-2027 — update this list each year.
+    - cron: "0 10 11 6 *"    # 2026-06-11
+    - cron: "0 10 9 7 *"     # 2026-07-09
+    - cron: "0 10 6 8 *"     # 2026-08-06
+    - cron: "0 10 3 9 *"     # 2026-09-03
+    - cron: "0 10 1 10 *"    # 2026-10-01
+    - cron: "0 10 29 10 *"   # 2026-10-29
+    - cron: "0 10 26 11 *"   # 2026-11-26
+    - cron: "0 10 24 12 *"   # 2026-12-24
+  workflow_dispatch:
+    inputs:
+      cycle_date:
+        description: "NASR cycle effective date (YYYY-MM-DD). Leave blank to auto-detect."
+        required: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install pyshp
+
+      - name: Resolve cycle date
+        id: cycle
+        run: |
+          if [ -n "${{ github.event.inputs.cycle_date }}" ]; then
+            echo "date=${{ github.event.inputs.cycle_date }}" >> "$GITHUB_OUTPUT"
+          else
+            # Compute the most recent 28-day cycle anchored to 2026-05-14
+            python3 - <<'EOF'
+          import datetime, os
+          anchor = datetime.date(2026, 5, 14)
+          today = datetime.date.today()
+          days_since = (today - anchor).days
+          cycle_offset = (days_since // 28) * 28
+          cycle_date = anchor + datetime.timedelta(days=cycle_offset)
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"date={cycle_date}\n")
+          print(f"Resolved cycle date: {cycle_date}")
+          EOF
+          fi
+
+      - name: Download and reconstruct
+        run: python3 reconstruct.py --cycle "${{ steps.cycle.outputs.date }}"
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet class_airspace_primitives.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Commit updated JSON
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add class_airspace_primitives.json
+          git commit -m "Update airspace data — NASR cycle ${{ steps.cycle.outputs.date }}"
+          git push
