@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 """
-Parse FAA Coded Instrument Flight Procedures (CIFP) to extract controlled
-airspace boundaries relevant to hobby aviation (floor <= 400 ft MSL).
+Parse FAA Coded Instrument Flight Procedures (CIFP) to extract all
+Class B, C, and D controlled airspace boundaries.
+
+Note: the FAA's CIFP UC subsection only contains Class B/C/D airspace.
+Class E (and lower) is not in this dataset and would need to come from
+another source such as the FAA's NASR subscription.
 
 Source: https://aeronav.faa.gov/Upload_313-d/cifp/CIFP_YYMMDD.zip
 Format: ARINC 424-18 fixed-width, 132 chars/line + CRLF
@@ -170,9 +174,6 @@ def parse_records(text):
         ceil_unit  = first[92]
         name       = first[93:123].strip()
 
-        if floor_ft is None or floor_ft > 400:
-            continue
-
         geometry = _build_geometry(records)
         if geometry is None:
             continue
@@ -298,7 +299,7 @@ def main():
     result = {
         "source":    f"FAA CIFP 28-day cycle {cycle}",
         "format":    "ARINC 424-18 (FAACIFP18)",
-        "filter":    "Class B/C/D surface (floor_ft <= 400)",
+        "scope":     "All Class B/C/D airspace shells (CIFP UC subsection)",
         "count":     len(airspaces),
         "by_class":  counts,
         "generated": datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"),
