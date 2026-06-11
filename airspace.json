@@ -1,5 +1,5 @@
 {
-  "source": "FAA CIFP 28-day cycle 260514",
+  "source": "FAA CIFP 28-day cycle 260611",
   "format": "ARINC 424-18 (FAACIFP18)",
   "scope": "All Class B/C/D airspace shells (CIFP UC subsection)",
   "count": 1223,
@@ -8,7 +8,7 @@
     "B": 357,
     "D": 539
   },
-  "generated": "2026-05-31T02:06:40Z",
+  "generated": "2026-06-11T14:04:05Z",
   "airspaces": [
     {
       "id": "ACYVR_C_A",
