@@ -1,5 +1,5 @@
 {
-  "source": "FAA CIFP 28-day cycle 260611",
+  "source": "FAA CIFP 28-day cycle 260709",
   "format": "ARINC 424-18 (FAACIFP18)",
   "scope": "All Class B/C/D airspace shells (CIFP UC subsection)",
   "count": 1223,
@@ -8,7 +8,7 @@
     "B": 357,
     "D": 539
   },
-  "generated": "2026-06-11T14:04:05Z",
+  "generated": "2026-07-09T12:34:26Z",
   "airspaces": [
     {
       "id": "ACYVR_C_A",
@@ -28047,10 +28047,57 @@
       "ceiling_ft": 3000,
       "ceiling_ref": "MSL",
       "geometry": {
-        "type": "circle",
-        "center_lat": 33.829667,
-        "center_lon": -116.506694,
-        "radius_nm": 4.3
+        "type": "polygon_arc",
+        "segments": [
+          {
+            "type": "arc",
+            "end_lat": 33.900419,
+            "end_lon": -116.521314,
+            "center_lat": 33.829669,
+            "center_lon": -116.506692,
+            "radius_nm": 4.3,
+            "direction": "clockwise"
+          },
+          {
+            "type": "point",
+            "lat": 33.796767,
+            "lon": -116.430244
+          },
+          {
+            "type": "point",
+            "lat": 33.761283,
+            "lon": -116.397108
+          },
+          {
+            "type": "point",
+            "lat": 33.724314,
+            "lon": -116.453842
+          },
+          {
+            "type": "arc",
+            "end_lat": 33.759783,
+            "end_lon": -116.486986,
+            "center_lat": 33.829669,
+            "center_lon": -116.506692,
+            "radius_nm": 4.3,
+            "direction": "clockwise"
+          },
+          {
+            "type": "point",
+            "lat": 33.863106,
+            "lon": -116.582839
+          },
+          {
+            "type": "point",
+            "lat": 33.870428,
+            "lon": -116.589228
+          },
+          {
+            "type": "point",
+            "lat": 33.907747,
+            "lon": -116.527703
+          }
+        ]
       }
     },
     {
@@ -45973,20 +46020,56 @@
         "segments": [
           {
             "type": "arc",
-            "end_lat": 32.975044,
-            "end_lon": -97.232125,
-            "center_lat": 32.966789,
-            "center_lon": -97.233625,
-            "radius_nm": 0.5,
+            "end_lat": 33.058406,
+            "end_lon": -97.249261,
+            "center_lat": 33.049844,
+            "center_lon": -97.232236,
+            "radius_nm": 1.0,
             "direction": "counterclockwise"
           },
           {
             "type": "arc",
-            "end_lat": 32.959375,
-            "end_lon": -97.238178,
+            "end_lat": 33.034039,
+            "end_lon": -97.225831,
             "center_lat": 32.990306,
             "center_lon": -97.319428,
-            "radius_nm": 4.5,
+            "radius_nm": 5.4,
+            "direction": "clockwise"
+          },
+          {
+            "type": "arc",
+            "end_lat": 32.984533,
+            "end_lon": -97.21265,
+            "center_lat": 32.966789,
+            "center_lon": -97.233625,
+            "radius_nm": 1.5,
+            "direction": "counterclockwise"
+          },
+          {
+            "type": "arc",
+            "end_lat": 32.942036,
+            "end_lon": -97.229069,
+            "center_lat": 32.990306,
+            "center_lon": -97.319428,
+            "radius_nm": 5.4,
+            "direction": "clockwise"
+          },
+          {
+            "type": "arc",
+            "end_lat": 32.925075,
+            "end_lon": -97.393281,
+            "center_lat": 32.931236,
+            "center_lon": -97.411683,
+            "radius_nm": 1.0,
+            "direction": "counterclockwise"
+          },
+          {
+            "type": "arc",
+            "end_lat": 32.947839,
+            "end_lon": -97.4138,
+            "center_lat": 32.990306,
+            "center_lon": -97.319428,
+            "radius_nm": 5.4,
             "direction": "clockwise"
           }
         ]
@@ -48003,16 +48086,16 @@
         "segments": [
           {
             "type": "arc",
-            "end_lat": 32.881406,
+            "end_lat": 32.896922,
             "end_lon": -97.400278,
-            "center_lat": 32.819294,
-            "center_lon": -97.361683,
-            "radius_nm": 4.2,
+            "center_lat": 32.819769,
+            "center_lon": -97.36245,
+            "radius_nm": 5.0,
             "direction": "clockwise"
           },
           {
             "type": "point",
-            "lat": 32.757192,
+            "lat": 32.742628,
             "lon": -97.400278
           }
         ]
@@ -49274,96 +49357,36 @@
         "type": "polygon_arc",
         "segments": [
           {
-            "type": "point",
-            "lat": 32.877331,
-            "lon": -97.467367
-          },
-          {
-            "type": "point",
-            "lat": 32.87745,
-            "lon": -97.459342
-          },
-          {
-            "type": "point",
-            "lat": 32.877989,
-            "lon": -97.459333
-          },
-          {
-            "type": "point",
-            "lat": 32.877719,
-            "lon": -97.441094
-          },
-          {
-            "type": "point",
-            "lat": 32.878089,
-            "lon": -97.415919
-          },
-          {
             "type": "arc",
-            "end_lat": 32.840903,
-            "end_lon": -97.415161,
-            "center_lat": 32.769167,
-            "center_lon": -97.441667,
-            "radius_nm": 4.5,
-            "direction": "clockwise"
-          },
-          {
-            "type": "point",
-            "lat": 32.835689,
-            "lon": -97.400278
-          },
-          {
-            "type": "arc",
-            "end_lat": 32.702656,
+            "end_lat": 32.677033,
             "end_lon": -97.400278,
-            "center_lat": 32.769167,
-            "center_lon": -97.441667,
-            "radius_nm": 4.5,
+            "center_lat": 32.769186,
+            "center_lon": -97.441533,
+            "radius_nm": 5.9,
             "direction": "clockwise"
-          },
-          {
-            "type": "point",
-            "lat": 32.697008,
-            "lon": -97.416825
-          },
-          {
-            "type": "point",
-            "lat": 32.659875,
-            "lon": -97.418367
-          },
-          {
-            "type": "point",
-            "lat": 32.660636,
-            "lon": -97.444064
-          },
-          {
-            "type": "point",
-            "lat": 32.660917,
-            "lon": -97.463175
-          },
-          {
-            "type": "point",
-            "lat": 32.661197,
-            "lon": -97.463169
-          },
-          {
-            "type": "point",
-            "lat": 32.661389,
-            "lon": -97.469664
           },
           {
             "type": "arc",
-            "end_lat": 32.697439,
-            "end_lon": -97.468189,
-            "center_lat": 32.769167,
-            "center_lon": -97.441667,
-            "radius_nm": 4.5,
+            "end_lat": 32.814839,
+            "end_lon": -97.544906,
+            "center_lat": 32.829267,
+            "center_lon": -97.534942,
+            "radius_nm": 1.0,
+            "direction": "counterclockwise"
+          },
+          {
+            "type": "arc",
+            "end_lat": 32.841219,
+            "end_lon": -97.521131,
+            "center_lat": 32.769186,
+            "center_lon": -97.441533,
+            "radius_nm": 5.9,
             "direction": "clockwise"
           },
           {
             "type": "point",
-            "lat": 32.8413,
-            "lon": -97.466608
+            "lat": 32.861347,
+            "lon": -97.400278
           }
         ]
       }
@@ -56903,9 +56926,9 @@
       "ceiling_ref": "MSL",
       "geometry": {
         "type": "circle",
-        "center_lat": 44.258083,
-        "center_lon": -88.519083,
-        "radius_nm": 4.2
+        "center_lat": 44.258092,
+        "center_lon": -88.519072,
+        "radius_nm": 4.4
       }
     },
     {
@@ -57937,12 +57960,12 @@
         "segments": [
           {
             "type": "point",
-            "lat": 39.206461,
+            "lat": 39.206458,
             "lon": -84.405325
           },
           {
             "type": "point",
-            "lat": 39.179286,
+            "lat": 39.179283,
             "lon": -84.327008
           },
           {
@@ -69328,7 +69351,7 @@
         "type": "circle",
         "center_lat": 42.208444,
         "center_lon": -75.979611,
-        "radius_nm": 4.4
+        "radius_nm": 4.3
       }
     },
     {
@@ -69397,19 +69420,19 @@
         "segments": [
           {
             "type": "arc",
-            "end_lat": 40.857728,
-            "end_lon": -74.368536,
-            "center_lat": 40.875,
-            "center_lon": -74.281389,
+            "end_lat": 40.857931,
+            "end_lon": -74.368489,
+            "center_lat": 40.875222,
+            "center_lon": -74.28135,
             "radius_nm": 4.1,
             "direction": "clockwise"
           },
           {
             "type": "arc",
-            "end_lat": 40.816469,
-            "end_lon": -74.327939,
-            "center_lat": 40.799167,
-            "center_lon": -74.415,
+            "end_lat": 40.816664,
+            "end_lon": -74.327836,
+            "center_lat": 40.799336,
+            "center_lon": -74.414886,
             "radius_nm": 4.1,
             "direction": "counterclockwise"
           }
@@ -69924,31 +69947,31 @@
         "segments": [
           {
             "type": "arc",
-            "end_lat": 40.72855,
-            "end_lon": -73.529522,
-            "center_lat": 40.728611,
-            "center_lon": -73.413333,
-            "radius_nm": 5.3,
-            "direction": "clockwise"
-          },
-          {
-            "type": "point",
-            "lat": 40.765917,
-            "lon": -73.307969
-          },
-          {
-            "type": "arc",
-            "end_lat": 40.758181,
-            "end_lon": -73.329847,
-            "center_lat": 40.728611,
-            "center_lon": -73.413333,
+            "end_lat": 40.758844,
+            "end_lon": -73.329933,
+            "center_lat": 40.729272,
+            "center_lon": -73.413419,
             "radius_nm": 4.2,
             "direction": "clockwise"
           },
           {
             "type": "point",
-            "lat": 40.728572,
-            "lon": -73.505406
+            "lat": 40.729272,
+            "lon": -73.505494
+          },
+          {
+            "type": "arc",
+            "end_lat": 40.729272,
+            "end_lon": -73.529611,
+            "center_lat": 40.729272,
+            "center_lon": -73.413419,
+            "radius_nm": 5.3,
+            "direction": "clockwise"
+          },
+          {
+            "type": "point",
+            "lat": 40.766581,
+            "lon": -73.308056
           }
         ]
       }
@@ -70387,10 +70410,33 @@
       "ceiling_ft": 2600,
       "ceiling_ref": "MSL",
       "geometry": {
-        "type": "circle",
-        "center_lat": 39.678708,
-        "center_lon": -75.606633,
-        "radius_nm": 4.2
+        "type": "polygon_arc",
+        "segments": [
+          {
+            "type": "point",
+            "lat": 39.748411,
+            "lon": -75.615764
+          },
+          {
+            "type": "point",
+            "lat": 39.753708,
+            "lon": -75.6148
+          },
+          {
+            "type": "point",
+            "lat": 39.749061,
+            "lon": -75.572003
+          },
+          {
+            "type": "arc",
+            "end_lat": 39.743761,
+            "end_lon": -75.572969,
+            "center_lat": 39.678708,
+            "center_lon": -75.606633,
+            "radius_nm": 4.2,
+            "direction": "clockwise"
+          }
+        ]
       }
     },
     {
@@ -70674,8 +70720,8 @@
       "ceiling_ref": "MSL",
       "geometry": {
         "type": "circle",
-        "center_lat": 40.799167,
-        "center_lon": -74.415,
+        "center_lat": 40.799336,
+        "center_lon": -74.414886,
         "radius_nm": 4.1
       }
     },
@@ -71392,8 +71438,8 @@
       "ceiling_ref": "MSL",
       "geometry": {
         "type": "circle",
-        "center_lat": 40.85,
-        "center_lon": -74.061111,
+        "center_lat": 40.8501,
+        "center_lon": -74.060833,
         "radius_nm": 4.2
       }
     },
@@ -72362,6 +72408,148 @@
         "center_lat": 29.179908,
         "center_lon": -81.058042,
         "radius_nm": 10.0
+      }
+    },
+    {
+      "id": "AKDJT_C_A",
+      "name": "WEST PALM BEACH AREA A",
+      "icao": "KDJT",
+      "airspace_type": "A",
+      "class": "C",
+      "floor_ft": 0,
+      "floor_ref": "AGL",
+      "ceiling_ft": 4000,
+      "ceiling_ref": "MSL",
+      "geometry": {
+        "type": "polygon_arc",
+        "segments": [
+          {
+            "type": "arc",
+            "end_lat": 26.609117,
+            "end_lon": -80.052456,
+            "center_lat": 26.593044,
+            "center_lon": -80.085064,
+            "radius_nm": 2.0,
+            "direction": "counterclockwise"
+          },
+          {
+            "type": "arc",
+            "end_lat": 26.602681,
+            "end_lon": -80.120672,
+            "center_lat": 26.683161,
+            "center_lon": -80.095592,
+            "radius_nm": 5.0,
+            "direction": "clockwise"
+          }
+        ]
+      }
+    },
+    {
+      "id": "AKDJT_C_B",
+      "name": "WEST PALM BEACH AREA B",
+      "icao": "KDJT",
+      "airspace_type": "A",
+      "class": "C",
+      "floor_ft": 1600,
+      "floor_ref": "MSL",
+      "ceiling_ft": 4000,
+      "ceiling_ref": "MSL",
+      "geometry": {
+        "type": "polygon_arc",
+        "segments": [
+          {
+            "type": "arc",
+            "end_lat": 26.602681,
+            "end_lon": -80.120672,
+            "center_lat": 26.593044,
+            "center_lon": -80.085064,
+            "radius_nm": 2.0,
+            "direction": "clockwise"
+          },
+          {
+            "type": "point",
+            "lat": 26.609117,
+            "lon": -80.052456
+          },
+          {
+            "type": "arc",
+            "end_lat": 26.519408,
+            "end_lon": -80.058275,
+            "center_lat": 26.683161,
+            "center_lon": -80.095592,
+            "radius_nm": 10.0,
+            "direction": "clockwise"
+          },
+          {
+            "type": "point",
+            "lat": 26.531064,
+            "lon": -80.172717
+          },
+          {
+            "type": "point",
+            "lat": 26.563558,
+            "lon": -80.173408
+          },
+          {
+            "type": "point",
+            "lat": 26.590406,
+            "lon": -80.173581
+          }
+        ]
+      }
+    },
+    {
+      "id": "AKDJT_C_C",
+      "name": "WEST PALM BEACH AREA C",
+      "icao": "KDJT",
+      "airspace_type": "A",
+      "class": "C",
+      "floor_ft": 1200,
+      "floor_ref": "MSL",
+      "ceiling_ft": 4000,
+      "ceiling_ref": "MSL",
+      "geometry": {
+        "type": "polygon_arc",
+        "segments": [
+          {
+            "type": "arc",
+            "end_lat": 26.531064,
+            "end_lon": -80.172717,
+            "center_lat": 26.683161,
+            "center_lon": -80.095592,
+            "radius_nm": 10.0,
+            "direction": "clockwise"
+          },
+          {
+            "type": "point",
+            "lat": 26.519408,
+            "lon": -80.058275
+          },
+          {
+            "type": "arc",
+            "end_lat": 26.609117,
+            "end_lon": -80.052456,
+            "center_lat": 26.683161,
+            "center_lon": -80.095592,
+            "radius_nm": 5.0,
+            "direction": "counterclockwise"
+          },
+          {
+            "type": "point",
+            "lat": 26.602681,
+            "lon": -80.120672
+          },
+          {
+            "type": "point",
+            "lat": 26.590406,
+            "lon": -80.173581
+          },
+          {
+            "type": "point",
+            "lat": 26.563558,
+            "lon": -80.173408
+          }
+        ]
       }
     },
     {
@@ -73581,618 +73769,6 @@
             "type": "point",
             "lat": 30.364194,
             "lon": -87.334472
-          }
-        ]
-      }
-    },
-    {
-      "id": "AKPBI_C_A",
-      "name": "WEST PALM BEACH AREA A",
-      "icao": "KPBI",
-      "airspace_type": "A",
-      "class": "C",
-      "floor_ft": 0,
-      "floor_ref": "AGL",
-      "ceiling_ft": 4000,
-      "ceiling_ref": "MSL",
-      "geometry": {
-        "type": "polygon_arc",
-        "segments": [
-          {
-            "type": "arc",
-            "end_lat": 26.609119,
-            "end_lon": -80.05245,
-            "center_lat": 26.593056,
-            "center_lon": -80.085064,
-            "radius_nm": 2.0,
-            "direction": "counterclockwise"
-          },
-          {
-            "type": "arc",
-            "end_lat": 26.602681,
-            "end_lon": -80.120675,
-            "center_lat": 26.683161,
-            "center_lon": -80.095592,
-            "radius_nm": 5.0,
-            "direction": "clockwise"
-          }
-        ]
-      }
-    },
-    {
-      "id": "AKPBI_C_B",
-      "name": "WEST PALM BEACH AREA B",
-      "icao": "KPBI",
-      "airspace_type": "A",
-      "class": "C",
-      "floor_ft": 1600,
-      "floor_ref": "MSL",
-      "ceiling_ft": 4000,
-      "ceiling_ref": "MSL",
-      "geometry": {
-        "type": "polygon_arc",
-        "segments": [
-          {
-            "type": "point",
-            "lat": 26.590397,
-            "lon": -80.17335
-          },
-          {
-            "type": "arc",
-            "end_lat": 26.602681,
-            "end_lon": -80.120675,
-            "center_lat": 26.593056,
-            "center_lon": -80.085064,
-            "radius_nm": 2.0,
-            "direction": "clockwise"
-          },
-          {
-            "type": "point",
-            "lat": 26.609119,
-            "lon": -80.05245
-          },
-          {
-            "type": "arc",
-            "end_lat": 26.519411,
-            "end_lon": -80.058269,
-            "center_lat": 26.683161,
-            "center_lon": -80.095592,
-            "radius_nm": 10.0,
-            "direction": "clockwise"
-          },
-          {
-            "type": "point",
-            "lat": 26.531017,
-            "lon": -80.1726
-          },
-          {
-            "type": "point",
-            "lat": 26.531256,
-            "lon": -80.172606
-          },
-          {
-            "type": "point",
-            "lat": 26.532397,
-            "lon": -80.172622
-          },
-          {
-            "type": "point",
-            "lat": 26.53255,
-            "lon": -80.172625
-          },
-          {
-            "type": "point",
-            "lat": 26.5339,
-            "lon": -80.172642
-          },
-          {
-            "type": "point",
-            "lat": 26.536178,
-            "lon": -80.172678
-          },
-          {
-            "type": "point",
-            "lat": 26.537192,
-            "lon": -80.172689
-          },
-          {
-            "type": "point",
-            "lat": 26.537381,
-            "lon": -80.172689
-          },
-          {
-            "type": "point",
-            "lat": 26.537814,
-            "lon": -80.172694
-          },
-          {
-            "type": "point",
-            "lat": 26.538453,
-            "lon": -80.172703
-          },
-          {
-            "type": "point",
-            "lat": 26.538781,
-            "lon": -80.172708
-          },
-          {
-            "type": "point",
-            "lat": 26.540692,
-            "lon": -80.172742
-          },
-          {
-            "type": "point",
-            "lat": 26.542617,
-            "lon": -80.172767
-          },
-          {
-            "type": "point",
-            "lat": 26.544369,
-            "lon": -80.172789
-          },
-          {
-            "type": "point",
-            "lat": 26.546131,
-            "lon": -80.172814
-          },
-          {
-            "type": "point",
-            "lat": 26.546272,
-            "lon": -80.172819
-          },
-          {
-            "type": "point",
-            "lat": 26.548239,
-            "lon": -80.172833
-          },
-          {
-            "type": "point",
-            "lat": 26.550044,
-            "lon": -80.172858
-          },
-          {
-            "type": "point",
-            "lat": 26.550458,
-            "lon": -80.172861
-          },
-          {
-            "type": "point",
-            "lat": 26.553064,
-            "lon": -80.172897
-          },
-          {
-            "type": "point",
-            "lat": 26.554853,
-            "lon": -80.172936
-          },
-          {
-            "type": "point",
-            "lat": 26.555336,
-            "lon": -80.172936
-          },
-          {
-            "type": "point",
-            "lat": 26.555489,
-            "lon": -80.172936
-          },
-          {
-            "type": "point",
-            "lat": 26.556067,
-            "lon": -80.172972
-          },
-          {
-            "type": "point",
-            "lat": 26.557108,
-            "lon": -80.172978
-          },
-          {
-            "type": "point",
-            "lat": 26.557617,
-            "lon": -80.173014
-          },
-          {
-            "type": "point",
-            "lat": 26.558303,
-            "lon": -80.173061
-          },
-          {
-            "type": "point",
-            "lat": 26.559717,
-            "lon": -80.173114
-          },
-          {
-            "type": "point",
-            "lat": 26.562797,
-            "lon": -80.173144
-          },
-          {
-            "type": "point",
-            "lat": 26.563664,
-            "lon": -80.173156
-          },
-          {
-            "type": "point",
-            "lat": 26.563942,
-            "lon": -80.173156
-          },
-          {
-            "type": "point",
-            "lat": 26.564164,
-            "lon": -80.173156
-          },
-          {
-            "type": "point",
-            "lat": 26.564706,
-            "lon": -80.173133
-          },
-          {
-            "type": "point",
-            "lat": 26.565222,
-            "lon": -80.173161
-          },
-          {
-            "type": "point",
-            "lat": 26.566419,
-            "lon": -80.173111
-          },
-          {
-            "type": "point",
-            "lat": 26.568008,
-            "lon": -80.173094
-          },
-          {
-            "type": "point",
-            "lat": 26.571558,
-            "lon": -80.173147
-          },
-          {
-            "type": "point",
-            "lat": 26.572306,
-            "lon": -80.173156
-          },
-          {
-            "type": "point",
-            "lat": 26.572347,
-            "lon": -80.173156
-          },
-          {
-            "type": "point",
-            "lat": 26.572561,
-            "lon": -80.173158
-          },
-          {
-            "type": "point",
-            "lat": 26.572956,
-            "lon": -80.173158
-          },
-          {
-            "type": "point",
-            "lat": 26.576542,
-            "lon": -80.173189
-          },
-          {
-            "type": "point",
-            "lat": 26.579947,
-            "lon": -80.173231
-          },
-          {
-            "type": "point",
-            "lat": 26.580817,
-            "lon": -80.173253
-          },
-          {
-            "type": "point",
-            "lat": 26.581714,
-            "lon": -80.173261
-          },
-          {
-            "type": "point",
-            "lat": 26.581853,
-            "lon": -80.173261
-          },
-          {
-            "type": "point",
-            "lat": 26.58425,
-            "lon": -80.173272
-          },
-          {
-            "type": "point",
-            "lat": 26.588578,
-            "lon": -80.173333
-          },
-          {
-            "type": "point",
-            "lat": 26.588775,
-            "lon": -80.173339
-          }
-        ]
-      }
-    },
-    {
-      "id": "AKPBI_C_C",
-      "name": "WEST PALM BEACH AREA C",
-      "icao": "KPBI",
-      "airspace_type": "A",
-      "class": "C",
-      "floor_ft": 1200,
-      "floor_ref": "MSL",
-      "ceiling_ft": 4000,
-      "ceiling_ref": "MSL",
-      "geometry": {
-        "type": "polygon_arc",
-        "segments": [
-          {
-            "type": "arc",
-            "end_lat": 26.531017,
-            "end_lon": -80.1726,
-            "center_lat": 26.683161,
-            "center_lon": -80.095592,
-            "radius_nm": 10.0,
-            "direction": "clockwise"
-          },
-          {
-            "type": "point",
-            "lat": 26.519411,
-            "lon": -80.058269
-          },
-          {
-            "type": "arc",
-            "end_lat": 26.609119,
-            "end_lon": -80.05245,
-            "center_lat": 26.683161,
-            "center_lon": -80.095592,
-            "radius_nm": 5.0,
-            "direction": "counterclockwise"
-          },
-          {
-            "type": "point",
-            "lat": 26.602681,
-            "lon": -80.120675
-          },
-          {
-            "type": "point",
-            "lat": 26.590397,
-            "lon": -80.17335
-          },
-          {
-            "type": "point",
-            "lat": 26.588775,
-            "lon": -80.173339
-          },
-          {
-            "type": "point",
-            "lat": 26.588578,
-            "lon": -80.173333
-          },
-          {
-            "type": "point",
-            "lat": 26.58425,
-            "lon": -80.173272
-          },
-          {
-            "type": "point",
-            "lat": 26.581853,
-            "lon": -80.173261
-          },
-          {
-            "type": "point",
-            "lat": 26.581714,
-            "lon": -80.173261
-          },
-          {
-            "type": "point",
-            "lat": 26.580817,
-            "lon": -80.173253
-          },
-          {
-            "type": "point",
-            "lat": 26.579947,
-            "lon": -80.173231
-          },
-          {
-            "type": "point",
-            "lat": 26.576542,
-            "lon": -80.173189
-          },
-          {
-            "type": "point",
-            "lat": 26.572956,
-            "lon": -80.173158
-          },
-          {
-            "type": "point",
-            "lat": 26.572561,
-            "lon": -80.173158
-          },
-          {
-            "type": "point",
-            "lat": 26.572347,
-            "lon": -80.173156
-          },
-          {
-            "type": "point",
-            "lat": 26.572306,
-            "lon": -80.173156
-          },
-          {
-            "type": "point",
-            "lat": 26.571558,
-            "lon": -80.173147
-          },
-          {
-            "type": "point",
-            "lat": 26.568008,
-            "lon": -80.173094
-          },
-          {
-            "type": "point",
-            "lat": 26.566419,
-            "lon": -80.173111
-          },
-          {
-            "type": "point",
-            "lat": 26.565222,
-            "lon": -80.173161
-          },
-          {
-            "type": "point",
-            "lat": 26.564706,
-            "lon": -80.173133
-          },
-          {
-            "type": "point",
-            "lat": 26.564164,
-            "lon": -80.173156
-          },
-          {
-            "type": "point",
-            "lat": 26.563942,
-            "lon": -80.173156
-          },
-          {
-            "type": "point",
-            "lat": 26.563664,
-            "lon": -80.173156
-          },
-          {
-            "type": "point",
-            "lat": 26.562797,
-            "lon": -80.173144
-          },
-          {
-            "type": "point",
-            "lat": 26.559717,
-            "lon": -80.173114
-          },
-          {
-            "type": "point",
-            "lat": 26.558303,
-            "lon": -80.173061
-          },
-          {
-            "type": "point",
-            "lat": 26.557617,
-            "lon": -80.173014
-          },
-          {
-            "type": "point",
-            "lat": 26.557108,
-            "lon": -80.172978
-          },
-          {
-            "type": "point",
-            "lat": 26.556067,
-            "lon": -80.172972
-          },
-          {
-            "type": "point",
-            "lat": 26.555489,
-            "lon": -80.172936
-          },
-          {
-            "type": "point",
-            "lat": 26.555336,
-            "lon": -80.172936
-          },
-          {
-            "type": "point",
-            "lat": 26.554853,
-            "lon": -80.172936
-          },
-          {
-            "type": "point",
-            "lat": 26.553064,
-            "lon": -80.172897
-          },
-          {
-            "type": "point",
-            "lat": 26.550458,
-            "lon": -80.172861
-          },
-          {
-            "type": "point",
-            "lat": 26.550044,
-            "lon": -80.172858
-          },
-          {
-            "type": "point",
-            "lat": 26.548239,
-            "lon": -80.172833
-          },
-          {
-            "type": "point",
-            "lat": 26.546272,
-            "lon": -80.172819
-          },
-          {
-            "type": "point",
-            "lat": 26.546131,
-            "lon": -80.172814
-          },
-          {
-            "type": "point",
-            "lat": 26.544369,
-            "lon": -80.172789
-          },
-          {
-            "type": "point",
-            "lat": 26.542617,
-            "lon": -80.172767
-          },
-          {
-            "type": "point",
-            "lat": 26.540692,
-            "lon": -80.172742
-          },
-          {
-            "type": "point",
-            "lat": 26.538781,
-            "lon": -80.172708
-          },
-          {
-            "type": "point",
-            "lat": 26.538453,
-            "lon": -80.172703
-          },
-          {
-            "type": "point",
-            "lat": 26.537814,
-            "lon": -80.172694
-          },
-          {
-            "type": "point",
-            "lat": 26.537381,
-            "lon": -80.172689
-          },
-          {
-            "type": "point",
-            "lat": 26.537192,
-            "lon": -80.172689
-          },
-          {
-            "type": "point",
-            "lat": 26.536178,
-            "lon": -80.172678
-          },
-          {
-            "type": "point",
-            "lat": 26.5339,
-            "lon": -80.172642
-          },
-          {
-            "type": "point",
-            "lat": 26.53255,
-            "lon": -80.172625
-          },
-          {
-            "type": "point",
-            "lat": 26.532397,
-            "lon": -80.172622
-          },
-          {
-            "type": "point",
-            "lat": 26.531256,
-            "lon": -80.172606
           }
         ]
       }
@@ -88338,7 +87914,7 @@
     },
     {
       "id": "ZKTMB_D_A",
-      "name": "MIAMI EXECUTIVE AIRPORT",
+      "name": "MIAMI",
       "icao": "KTMB",
       "airspace_type": "Z",
       "class": "D",
@@ -88347,10 +87923,33 @@
       "ceiling_ft": 2500,
       "ceiling_ref": "MSL",
       "geometry": {
-        "type": "circle",
-        "center_lat": 25.647561,
-        "center_lon": -80.433222,
-        "radius_nm": 3.5
+        "type": "polygon_arc",
+        "segments": [
+          {
+            "type": "point",
+            "lat": 25.622328,
+            "lon": -80.540711
+          },
+          {
+            "type": "point",
+            "lat": 25.662392,
+            "lon": -80.543064
+          },
+          {
+            "type": "arc",
+            "end_lat": 25.663964,
+            "end_lon": -80.510444,
+            "center_lat": 25.647561,
+            "center_lon": -80.433222,
+            "radius_nm": 4.3,
+            "direction": "clockwise"
+          },
+          {
+            "type": "point",
+            "lat": 25.623897,
+            "lon": -80.508103
+          }
+        ]
       }
     },
     {
