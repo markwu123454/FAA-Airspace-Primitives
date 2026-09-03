@@ -1,5 +1,5 @@
 {
-  "source": "FAA CIFP 28-day cycle 260806",
+  "source": "FAA CIFP 28-day cycle 260903",
   "format": "arc-encoded primitives (geodesic fitting on WGS84)",
   "scope": "All Class B/C/D airspace shells (CIFP UC subsection)",
   "count": 1115,
@@ -8,7 +8,7 @@
     "B": 351,
     "D": 471
   },
-  "generated": "2026-08-06T12:08:18Z",
+  "generated": "2026-09-03T14:07:51Z",
   "airspaces": [
     {
       "id": "ACYVR_C_A",
@@ -30972,15 +30972,15 @@
       "ceiling_ref": "MSL",
       "geometry": {
         "s": [
-          -85.9715444,
-          37.9722924
+          -85.9720361,
+          37.9838166
         ],
         "d": [
           [
             "a",
-            -85.9715444,
-            37.9072194,
-            7222.8,
+            -85.9720361,
+            37.9070639,
+            8519.2,
             0.0,
             360
           ]
